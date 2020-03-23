@@ -4,33 +4,6 @@
  * Tu nalezy zdefiniowac funkcje, ktorych zapowiedzi znajduja sie
  * w pliku naglowkowym.
  */
- 
-void WyswietlW (WyrazenieZesp  &W)
-{ WyswietlL(W.Arg1);
-
-  switch(W.Op) {
-    case Op_Dodaj:
-    std::cout << '+';
-    break;
-
-    case Op_Odejmij:
-    std::cout << '-';
-    break;
-
-    case Op_Mnoz:
-    std::cout << '*';
-    break;
-
-    case Op_Dziel:
-    std::cout << '/';
-    break;
-
-    default:
-    std::cout << "nie ma takiej opcji" <<std::endl;
-    break;
-  }
-  WyswietlZespolona(W.Arg2);
-}
 
 bool WczytajW (WyrazenieZesp &W)
 { char znak;
@@ -82,3 +55,31 @@ LZespolona Oblicz (WyrazenieZesp  W)
   }
   return Wynik;
 }
+
+void WyswietlW (WyrazenieZesp  &W)
+{ WyswietlL(W.Arg1);
+
+  switch(W.Op) {
+    case Op_Dodaj:
+    std::cout << '+';
+    break;
+
+    case Op_Odejmij:
+    std::cout << '-';
+    break;
+
+    case Op_Mnoz:
+    std::cout << '*';
+    break;
+
+    case Op_Dziel:
+    std::cout << '/';
+    break;
+
+    default:
+    std::cout << "nie ma takiej opcji" <<std::endl;
+    break;
+  }
+  WyswietlZespolona(W.Arg2);
+}
+
