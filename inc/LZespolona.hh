@@ -30,8 +30,6 @@ LZespolona  operator / (LZespolona  Skl1,  LZespolona  Skl2);
 LZespolona operator / (LZespolona Skl1, float Skl2);
 LZespolona sprzezenie(LZespolona Skl1);
 float modul(LZespolona Skl1);
-bool operator == (LZespolona Skl1, LZespolona Skl2);
-bool operator != (LZespolona Skl1, LZespolona Skl2);
 bool WczytajL (LZespolona &L);
 bool WyswietlL (LZespolona  &L);
 LZespolona UtworzL (float Re, float Im);
