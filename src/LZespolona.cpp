@@ -32,8 +32,8 @@ LZespolona  operator * (LZespolona  Skl1,  LZespolona  Skl2)
 
 LZespolona  operator / (LZespolona  Skl1,  LZespolona  Skl2)
 { LZespolona  Wynik;
-  Wynik.re = (Skl1.re * Skl2.re + Skl1.im * Skl2.im) / pow(modul(Skl2), 2);
-  Wynik.im = (Skl1.im * Skl2.re - Skl1.re * Skl2.im) / pow(modul(Skl2), 2);
+  Wynik.re = (Skl1.re * Skl2.re + Skl1.im * Skl2.im) / (modul(Skl2) * modul(Skl2));
+  Wynik.im = (Skl1.im * Skl2.re - Skl1.re * Skl2.im) / (modul(Skl2) * modul(Skl2));
   return Wynik;
 }
 
