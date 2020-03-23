@@ -57,18 +57,6 @@ float modul(LZespolona Skl1)
   return Wynik;
 }
 
-bool operator == (LZespolona Skl1, LZespolona Skl2)
-{ if (Skl1.re == Skl2.re && Skl1.im == Skl2.im)
-    return true;
-  return false;
-}
-
-bool operator != (LZespolona Skl1, LZespolona Skl2)
-{ if (Skl1.re != Skl2.re && Skl1.im != Skl2.im)
-    return true;
-  return false;
-}
-
 bool WczytajL (LZespolona &L)
 { char znak;
   std::cin >> znak;
